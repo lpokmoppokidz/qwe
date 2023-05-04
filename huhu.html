@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="huhu.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="width: 100%;height: 800px;border: 1px solid;">
+        <div class="row" >
+            <img src="banner2.png" alt="" width="100%" style="border-bottom: 2px solid grey;">
+        </div>
+        <div class="row" style="border-bottom: 3px solid grey;">
+            <button id="thanhtoan" style="border: none; padding: 0.5rem;border-radius: 20px; margin-left: 200px;">thanhtoan</button>
+        </div>
+        <div class="row">
+            <table border="1" cellspacing="0" style="width: 100%;" id="mytable">
+                <tr>
+                    <th>stt</th>
+                    <th>ho ten</th>
+                    <th>email</th>
+                    <th>sdt</th>
+                    <th>phong</th>
+                    <th>giaovien</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="wrap">
+        <form action="" id="form" onblur="return validation();">
+            <div class="row2">
+                <h1>thong tin sinh vien</h1>
+                <button id="close">X</button>
+            </div>
+            <div class="row1">
+                <label for="name"> ho ten</label>
+                <input type="text" id="hoten">
+                <i id="hoten1">bat buoc</i>
+            </div>
+            <div class="row1">
+                <label for="email">email</label>
+                <input type="text" id="email">
+                <i id="email1">bat buoc</i>
+            </div>
+            <div class="row1">
+                <label for="sdt">so dien thoai</label>
+                <input type="text" id="sdt">
+                <i id="sdt1">bat buoc</i>
+            </div>
+            <div class="row1">
+                <select name="" id="chon">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="row3">
+                <input type="checkbox" name="" id="check" value="giaovien1">
+                <label for="giaovien1">giao vien 1</label>
+    
+            </div>
+            <button id="thanhtoan" onclick="nhap();">thanh toan</button>
+        </form>
+    </div>
+    <script src="huhu.js"></script>
+</body>
+</html>
